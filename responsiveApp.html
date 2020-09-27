@@ -11,6 +11,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min">
     <link rel="stylesheet" href="./bootstrap/css/bootstrap-grid.css">
     <script src="./bootstrap/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="style.css">
@@ -20,40 +22,65 @@
 
 
 
-    <nav class="navbar navbar-default navbar-fixed-top ">
-        <div class="container-fluid">
+    <!-- <nav class="navbar navbar-default navbar-fixed-top "> -->
+    <div class="container-fluid">
 
-            <div class=" navbar-collapse" id="navbarNav">
+   
 
-                <ul class="nav justify-content-center">
-                    <li class="nav-item ">
-                        <a class="nav-link " href="#" id="logo-name">
-                            <img src="./Img/liftlyLight.png" width="50" height="50" class="d-inline-block align-top"
-                                alt="" loading="lazy">
-                            Lyftly
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">The App</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">The Vision</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Blog</a>
-                    </li>
+        <div class=" navbar-collapse" id="navbarNav">
 
-                </ul>
-            </div>
+            <nav class="navbar navbar-expand-md navbar-light fixed-top">
+            
+                <a class="navbar-brand" href="">
+                    <img src="./Img/liftlyLight.png" width="50" height="50" class="d-inline-block align-top"
+                    alt="" loading="lazy">
+                </a>
+                <span class="navbar-text">
+                    Lyftly
+                </span>
+
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+                <div class="collapse navbar-collapse" id="collapse_target">
+                  
+                
+
+                    <ul class="navbar-nav nav justify-content-center">
+
+                        <!-- <li class="nav-item dropdown">
+                            <a class="nav-link dropdown" href="#" id="logo-name">
+                               
+                                
+                            </a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">The App</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">The Vision</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </nav>
+            <img src="bootstrap-4-navbar-cheat-sheet.png" class="img-fluid" alt="">
         </div>
+    </div>
 
-    </nav>
+    <!-- </nav> -->
 
     <div class="row space" id="space">
         <!-- Introduction -->
@@ -120,7 +147,7 @@
 
                 <p class="LU-titel">The Lyftly App</p>
                 <p class="LU-titel">Life can be stressful. </p>
-                <p class="SM-text text-wrap  " >Lyftly is all about self care and community involvement.
+                <p class="SM-text text-wrap  ">Lyftly is all about self care and community involvement.
                     Why not help yourself while helping others? With endless tips, tricks, and resources, Lyftly gives
                     you 24/7 access to encouragement and support.
                 </p>
@@ -140,7 +167,8 @@
 
                 </p>
                 <p class="SM-titel">Share your experiences! </p>
-                <p class="SM-text text-wrap  ">Are your classes stressing you out? Did you mess up your big presentation at work?
+                <p class="SM-text text-wrap  ">Are your classes stressing you out? Did you mess up your big presentation
+                    at work?
                     <br>
                     Just feeling kind of off or sad today?
                     <br>
@@ -149,14 +177,15 @@
                 </p>
                 <p class="SM-titel">See how other members are feeling!
                 </p>
-                <p class="SM-text text-wrap  ">Read all about the good, the bad, and the ugly in other people’s lives. <br>
+                <p class="SM-text text-wrap  ">Read all about the good, the bad, and the ugly in other people’s lives.
+                    <br>
                     Find support in shared experiences. <br>
                     You’re not alone! <br>
 
                 </p>
             </div>
             <div class="col-4 ">
-                <img class="TheLyftlyApp" src="./Img/TheLyftlyApp-Graphic.png"  alt="">
+                <img class="TheLyftlyApp" src="./Img/TheLyftlyApp-Graphic.png" alt="">
             </div>
             <div class="col-2 ">
 
@@ -209,7 +238,8 @@
             </div>
             <div class="col-2 ">
                 <p class="SM-titel">Journaling</p>
-                <p class="SM-text text-wrap  ">You don’t have to write a novel but writing a bit about how you’re feeling can help
+                <p class="SM-text text-wrap  ">You don’t have to write a novel but writing a bit about how you’re
+                    feeling can help
                     you cope with
                     your feelings. </p>
             </div>
@@ -251,12 +281,14 @@
         </div>
         <div class="col-4 text-center">
             <p class="SM-titel">Goal Setting</p>
-            <p class="SM-text text-wrap  ">Whether it’s something as simple as taking a few minutes to meditate or creating a guide
+            <p class="SM-text text-wrap  ">Whether it’s something as simple as taking a few minutes to meditate or
+                creating a guide
                 to living a healthier life, all progress is good progress.</p>
         </div>
         <div class="col-4 text-center">
             <p class="SM-titel">Peer Support</p>
-            <p class="SM-text text-wrap  ">If you feel that you are in a crisis, contact the appropriate emergency hotline. </p>
+            <p class="SM-text text-wrap  ">If you feel that you are in a crisis, contact the appropriate emergency
+                hotline. </p>
         </div>
         <div class="col-2 ">
 
@@ -393,7 +425,8 @@
             <img class="Blog" src="./Img/Blog - Graphic.png" alt="">
 
             <p class="SM-titel text-center">Read, share and explore our blog! </p>
-            <p class="SM-text text-center text-wrap ">With tips and tricks, mental health resources and personal stories, our blog
+            <p class="SM-text text-center text-wrap ">With tips and tricks, mental health resources and personal
+                stories, our blog
                 is sure to
                 help you in your journey to mental wellness.
             </p>
@@ -444,13 +477,13 @@
     <div class="row wrap">
         <div class="col-3 ">
         </div>
-        
+
         <div class="col-3 wrapinput">
             <p class="LU-titel"> Let's Talk</p>
             <input class="input" type="text" placeholder="Name">
             <input class="input" type="text" placeholder="Email">
             <input class="input" type="text" placeholder="Subject">
-            <textarea  class="textarea" class="form-control"  placeholder="Message" name="Message" id="" ></textarea>
+            <textarea class="textarea" class="form-control" placeholder="Message" name="Message" id=""></textarea>
         </div>
         <div class="col-3 wraptextarea">
         </div>
@@ -462,18 +495,18 @@
     <footer class="container-fluid text-center footer">
         <div class="row ">
             <div class="col-1 ">
-        
+
             </div>
             <div class="col-5 ">
-                <img class="img-responsive LogoContact" src="./Img/Logo & Contact Us Text.png"  alt="">
+                <img class="img-responsive LogoContact" src="./Img/Logo & Contact Us Text.png" alt="">
             </div>
-        
+
             <div class="col-5 ">
-                <img class="img-responsive social" src="./Img/social icons.png"  alt="">
-        
+                <img class="img-responsive social" src="./Img/social icons.png" alt="">
+
             </div>
             <div class="col-1 ">
-        
+
             </div>
         </div>
     </footer>
